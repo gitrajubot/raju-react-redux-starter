@@ -1,0 +1,27 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './Variables.scss';
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url(./assets/fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
+  }
+
+  @font-face {
+    font-family: CenturyGothic_Bold;
+    src: url(./assets/fonts/gothicb.ttf);
+  }
+
+  .enableButton{
+    background-color: $enable-button !important
+  }
+
+  .disableButton{
+    background-color: $disable-button !important
+  }
+
+
+  .text-color-gray{
+    color: $text-color-gray
+  }
+
+  

@@ -1,0 +1,399 @@
+.App {
+  text-align: center;
+}
+
+.logo{
+  text-align: start;
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+.logo img{
+  width: 80px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.logoText{
+  font-size: 20px;
+  letter-spacing: 6.72px;
+  color: #202020;
+  margin-top: -10px
+}
+
+.tag{
+  letter-spacing: 5px;
+  color: #202020;
+  font-size: 14px;
+  text-align: start;
+}
+
+.navbar{
+  box-shadow: 0px 2px 7.8px 0.2px rgba(0, 0, 0, 0.38);
+}
+    
+
+.navbar-toggler-icon {
+  // background-image: url(./../assets/navbarIcon.png) !important;
+  background-size: 100% 60% !important;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #454b51 !important;
+  font-family: CenturyGothic;
+  font-size: 16px !important;
+}
+
+
+@media (min-width: 768px)
+{
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.0rem;
+  padding-left: 1.0rem;
+}
+}
+
+.header{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .header{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logoText{
+    font-size: 18px;
+    letter-spacing: 0.72px;
+    color: #202020;
+  }
+}
+
+.bottomBorder{
+  border-bottom:1px solid #ddd  !important;
+}
+
+.border{
+  border: 1px solid #ddd !important;
+  border-radius: 10px;
+}
+
+.noBorder{
+  border: none !important;
+}
+
+
+.active{
+  border: 2px solid #fc0c03 !important;
+}
+
+.text{
+  font-family: CenturyGothic !important;
+  font-size: 16px ;
+}
+
+.textBold{
+  font-family: CenturyGothic_Bold !important;
+
+}
+
+.cardPadding{
+  padding: 15px 10px 12px 10px;
+}
+
+.textInput{
+  border: solid white !important;
+  transition: none !important;
+  color: #717982;
+  margin-top: 10px;
+  width: 100%;
+  background: unset;
+}
+
+.inputBlock{
+  padding-bottom: 15px;
+  position: relative;
+}
+
+@media (min-width: 572px){
+.title{ 
+  font-size: 36px;
+  letter-spacing: 3.6px;
+}
+}
+
+    textarea:hover, 
+    input:hover, 
+    textarea:active, 
+    input:active, 
+    textarea:focus, 
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+ {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+ }
+ 
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+ .check{
+  height: 15px;
+  width: 15px; 
+}
+
+
+.uncheck{
+   background-color: #dedede;
+   border: solid 1px #6c757d38;
+   border-radius: 3px;
+   background-image: linear-gradient(white, #dedede);
+}
+
+
+.Next{
+  flex:1
+}
+
+.NextButton{
+    float: right;
+    color: wheat !important;
+    width:100px;
+    margin-top: 2%;
+    border-radius: 40px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 !important;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.swal-button {
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+} 
+  
+.image {
+  height: 84px;
+  width: 84px;
+  margin-top: 30px;
+  border-radius: 100%;
+  border-color: '#bbbef6';
+  border-width: 2px;
+}
+
+.pageCardTitle {
+  font-size: 25px ;
+  // letter-spacing: 5.90px;
+}
+
+.pageCard{
+  box-shadow: 14px 18px 20px 0px #868282;
+  width: 550px;
+}
+
+.invalidEmail{
+  color: red;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  // max-width: 55%;
+}
+
+.phoneNumberCode{
+  display: flex;
+  width: 70px;
+  position: relative;
+  top: 10px;
+  color: rgba(108, 117, 125, 0.6);
+  left: 10px;
+}
+
+.phoneCode:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.phoneNoCodeSearch{
+  width: 90%;
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-left: 2px;
+  border-bottom: solid 1px black !important;
+  border: none;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.phoneCodeList{
+  text-align: left;
+  margin-top: -20px;
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  box-shadow: 0px 6px 10px 0px #9e9999;
+  overflow: overlay;
+}
+
+.phoneCodeListScroll{
+ margin-top: 40px;
+}
+
+.cameraBtn{
+  position: absolute;
+  bottom: 3px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 100%;
+  border: 1px solid rgb(0, 123, 255);
+  padding: 0;
+  font-size: 14px;
+  color: #007bff; 
+}
+
+.cameraBtn:hover{
+  color:#ffffff;
+}
+
+
+
+.dropdownDesign{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  align-items: baseline;
+  background-color: white;
+  box-shadow: 3px 4px 9px #908a8a;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 40px;
+  top: 25px;
+}
+
+.listOptionDesign{
+  color: #3c2f6d;
+  font-size: 15px;
+}
+
+.transparentButton{
+  background-color: unset; 
+  border: unset;
+  width: 100%;
+  align-self: self-start;
+  display: flex;
+}
+
+
+
+.companyIconDesign{
+  height: 30px;
+    width: 30px;
+    align-self: center;
+    margin: 15px;
+}
+
+.otpInput{
+  width: 3rem !important;
+  height: 3rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+
+.cardBasicStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.inputWrapper{
+  width: 100%;
+  .matInp{
+    background: unset;
+  }
+}
+
+.phoneInputWrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.menubar{
+  width: 0px;
+  transition: 0.5s;
+  background-color:cornflowerblue;
+  padding: unset;
+}
+
+.activeMenuBar{
+  width: 170px;
+  background: #007bff;
+    /* justify-content: flex-start; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 2px 7.8px 0.2px rgba(0, 0, 0, 0.38);
+}
+
+.anime{
+  transition: 0.5s;
+}
+
+.mailWrap{
+  overflow-wrap: anywhere;
+}
+
+.menuOption{
+  text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: inherit;
+}

@@ -1,0 +1,59 @@
+.inp{
+    border:solid white !important;
+    transition: none !important;
+    padding: 0px !important;
+    font-size: 14px !important;
+    padding-top: 9px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+     margin: 0; 
+}
+
+.label-name{
+  position: absolute;
+  top: 0px;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  margin: 0;
+  border-bottom:1px solid #ddd !important;
+  text-align: left;
+  pointer-events: none;
+  overflow: hidden;
+  color: #00000069;
+}
+
+.label-name::after{
+content: '';
+    position: absolute;
+    top: 0px;
+    bottom: -2px;
+    left: 0px;
+    right: 1px;
+    margin: 0;
+    border-bottom: blue 3px solid;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 0px;
+    transition:   all 0.3s ease;
+    font-size: 14px
+}
+
+.matInp:focus + .label-name .content-name,.matInp:valid + .label-name .content-name {
+    transform: translateY(-100%);
+    font-size: 12px;
+    color:blue
+}
+
+.matInp:focus + .label-name::after, .matInp:valid + .label-name::after {
+    transform: translateY(0%);
+}
