@@ -1,8 +1,2 @@
-export * from './SocialLoginAction'
-export * from './AddPhoneNoAction'
+
 export * from './GetConfigurationAction'
-export * from './OtpVerificationAction'
-export * from './LogoutAction'
-export * from './GetProfileAction'
-export * from './PasswordAction'
-export * from './LoginAction'

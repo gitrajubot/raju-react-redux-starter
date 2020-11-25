@@ -1,8 +1,2 @@
-export * from './SocialLoginApi'
-export * from './AddPhoneNoApi'
+
 export * from './GetConfigurationApi'
-export * from './OtpVerificationApi'
-export * from './LogoutApi'
-export * from './GetProfileApi'
-export * from './PasswordApi'
-export * from './LoginApi'
