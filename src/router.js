@@ -1,15 +1,12 @@
 
-import LoginSignupPage from './pages/loginSignupPage';
+import TablePage from './pages/tablePage'
 
 
 class Router {
     constructor() {
-        console.log('routes constructors');
-        // this.setRoutes();
         this.routes = [
-            { path: '/loginSignupPage', component: LoginSignupPage },
-            
-            { path: '/', exact: true, redirectTo:  '/loginSignupPage' }
+            { path: '/tablePage', component: TablePage },
+            { path: '/', exact: true, redirectTo:  '/tablePage' }
         ];
         
     }    

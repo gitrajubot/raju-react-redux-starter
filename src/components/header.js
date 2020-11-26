@@ -1,56 +1,57 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Row, Col, Button } from 'reactstrap';
+import {
+    Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink, Collapse,
+} from 'reactstrap';
+import { BrowserRouter } from "react-router-dom"
 import '../App.scss';
 import { connect } from 'react-redux';
 
-// const user = require("./../assets/useImage.png");
-// const logo = require("./../assets/logo.png");
 class Header extends Component {
     constructor(props) {
         super(props);
         console.log('header constructor', props)
         this.state = {
-            isMenuOpen: false,
-            UserId: localStorage.getItem('UserId'),
-            // brandDetail: props.GetConfigurationReducer.configData.appConfig.brandSection
+            isOpen: false,
         };
     }
 
 
-    menuHandle() {
-        this.setState({
-            isMenuOpen: !this.state.isMenuOpen
-        })
-    }
 
-    logOut() {
-        
-                this.clearStorage()
-            
-    }
-    clearStorage() {
-        localStorage.clear();
-        this.props.history.push(`/loginSignupPage`)
-    }
+
+
 
 
     render() {
+        const toggle = () => this.setState({ isOpen: !this.state.isOpen });
         return (
+            <Navbar expand="md" fixed='top'>
+                <NavbarBrand href="/home">
+                    <div className='logo'>
+                        {/* <img src={require('../assets/homeScreen/logo.png')} /> */}
+                        <div className='logoText textBold m-0'>Central Real Estate Intelligence Database.</div>
+                    </div>
+                </NavbarBrand>
+                <BrowserRouter>
+                    <NavbarToggler className="noBorder" onClick={toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav navbar style={{color:"white"}}>
+                            <NavItem >
+                                <NavLink className='navlinkBox mr-3'><span className='navitemText textBold'>Proprties:</span> 
+                                <span className='navitemNo'>30,200,750</span></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className='navlinkBox mr-3' href="/"><span className='navitemText textBold'>Data:</span><span className='navitemNo'>30,200,750</span></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className='navlinkBox mr-3' href="/"><span className='navitemText textBold'>Accuracy:</span> <span className='navitemNo'>30,200,750</span></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink  className='navlinkBox mr-3' href="/"><span className='navitemText textBold'>Value:</span><span className='navitemNo'>30,200,750</span></NavLink>
+                            </NavItem>
+                        </Nav>
 
-            <Navbar color="primary" fixed='top' style={{ height: '80px', boxShadow: 'none', display: 'flex', flexDirection: 'row' }}>
-                <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                    <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
-                        <div className='companyIconDesign'>
-                            {/* <img style={{ height: '30px', width: '30px' }} src={logo} /></div> */}
-                        <div className='mt-3'>
-                            <div className='logoText textBold'>{this.props.brandName.name} </div>
-                            {this.props.brandName.isTag &&
-                                <div className='tag'>{this.props.brandName.tagLine}</div>
-                            }
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                    </Collapse>
+                </BrowserRouter>
             </Navbar>
 
         );
