@@ -1,11 +1,12 @@
 
-const base_URL = 'https://auth-template-node-final.herokuapp.com/';  
+const base_URL = '192.168.1.17:4010';  
 
 
 
 export const routers = {
     
-    getconfig: 'getconfig',
+    headerData: '',
+    tableData: ''
     
 }
 export const getUrl = (key) => {

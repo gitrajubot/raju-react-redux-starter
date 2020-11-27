@@ -1,5 +1,5 @@
 .inp{
-    border:solid white !important;
+    border:solid white;
     transition: none !important;
     padding: 0px !important;
     font-size: 14px !important;
@@ -21,7 +21,7 @@ input[type=number]::-webkit-outer-spin-button {
   left: 15px;
   right: 15px;
   margin: 0;
-  border-bottom:1px solid #ddd !important;
+//   border-bottom:1px solid #ddd !important;
   text-align: left;
   pointer-events: none;
   overflow: hidden;

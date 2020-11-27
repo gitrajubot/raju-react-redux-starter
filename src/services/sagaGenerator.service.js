@@ -19,7 +19,7 @@ export function GenerateSaga(actionType, apiService) {
                             store.dispatch({ type: (actionType + '_SUCCESS'), response})
                         } catch(error) {
                             console.log('sagaErr', error)
-                            toast.error(error.response.data)
+                            toast.error(error.Error)
                             store.dispatch({ type: (actionType + '_ERROR'), error: error.response  })
                         }
                     }

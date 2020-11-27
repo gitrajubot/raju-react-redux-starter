@@ -1,2 +1,2 @@
 
-export * from './GetConfigurationAction'
+export * from './TablePageAction'

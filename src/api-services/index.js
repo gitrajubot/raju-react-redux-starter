@@ -1,2 +1,2 @@
 
-export * from './GetConfigurationApi'
+export * from './TablePageApi'

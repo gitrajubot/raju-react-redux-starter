@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
+import GetHeaderDataReducer from './TablePageReducer';
+import GetTableDataReducer from './TablePageReducer';
 
-import GetConfigurationReducer from './GetConfigurationReducer';
 
 
 
 
 const rootReducer = combineReducers({
-    GetConfigurationReducer,
+    GetHeaderDataReducer,
+    GetTableDataReducer
 })
 
 export default rootReducer;

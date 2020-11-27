@@ -132,3 +132,62 @@ th{
 td{
   color: white;
 }
+
+.modalContainer{
+    width: fit-content;
+    height: fit-content;
+}
+
+.modal-content{
+    border-radius: 30px;
+    background: #1e1e1e;
+    width: 500px;
+    height: 415px;
+    padding: 20px;
+}
+
+.modalTitle{
+    color: #dabea8;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    align-self: center;
+}
+
+.cancelBtn{
+    background: inherit;
+    border: unset;
+    color: #5788c1;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 110px;
+}
+
+.addBtn{
+    background: #514036;
+    border: unset;
+    border-radius: 10px;
+    width: 110px;
+    color: #241a1a;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.fieldTitle{
+  font-size: 15px;
+}
+
+.modalInp{
+    margin: 10px 0px 15px 0px !important;
+    border: unset !important;
+    border-radius: 8px;
+    background: #202020;
+    // border-color: #202020 !important;
+    width: 100%;
+    height: 45px;
+}
+
+.modalBtnContainer{
+  display: flex;
+  align-self: flex-end;
+}
