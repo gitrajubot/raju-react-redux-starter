@@ -9,7 +9,8 @@ import { connect } from 'react-redux';
 import '../App.scss';
 import './../scss/login.scss';
 import '../Global.scss'
-import { FormCheck } from 'react-bootstrap';
+
+
 
 class TablePage extends Component {
     constructor(props) {
@@ -36,11 +37,11 @@ class TablePage extends Component {
     render() {
 
         return (
-            <div>
+            <div className='bgColor h-100'>
                 <div className='mb-5'>
                     <Header></Header>
                 </div>
-                <div className='p-5 w-100 position-fixed bgColor'>
+                <div className='p-5 w-100'>
                     <div className="d-flex justify-content-center " >
                         <div className="d-flex searchInput">
                             <Row sm='12' className="input">
@@ -56,7 +57,7 @@ class TablePage extends Component {
                     </div>
                 </div>
                 <div className='tableBody'>
-                    <Table className="w-100 h-100 bgColor">
+                    <Table className="w-100 h-100">
                         <thead>
                             <tr>
                                 <th></th>
@@ -191,7 +192,7 @@ class TablePage extends Component {
                     </Table>
 
                 </div>
-
+               
 
             </div>
 

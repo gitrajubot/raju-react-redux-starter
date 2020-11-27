@@ -113,6 +113,12 @@ box-shadow: none !important;
   color: white;
 }
 
+input.inputPlace.form-control {
+  background-color: #676262;
+  border-color: #676262;
+  color: white
+}
+
 .inputButton{
   color: #079dcc !important;
   width: 100%;
@@ -121,8 +127,11 @@ box-shadow: none !important;
 }
 
 .tableBody{
-  padding-top: 150px;
+  overflow-x: scroll;
   font-size: 14px;
+}
+.tableBody::-webkit-scrollbar {
+  display: none;
 }
 
 th{

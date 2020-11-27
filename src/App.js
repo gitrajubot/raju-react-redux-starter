@@ -32,7 +32,7 @@ getConfigArr(){
   render(){
     {console.log('in renderrrrrrrrrrrrrrrrr')}
     return (
-      this.ready ? 
+      
       <div className="App" >
       
         {/* <ToastContainer position="top-right" autoClose={4000} style={{zIndex: 999999}} /> */}
@@ -50,7 +50,7 @@ getConfigArr(){
           </div>
         </BrowserRouter> 
       </div>  
-      : <></>
+      
     );
   }
   
