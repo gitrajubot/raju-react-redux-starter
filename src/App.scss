@@ -163,6 +163,11 @@ td{
     width: 110px;
 }
 
+.cancelBtn:hover{
+  background: unset !important;
+  border: none !important;
+}
+
 .addBtn{
     background: #514036;
     border: unset;
@@ -190,4 +195,48 @@ td{
 .modalBtnContainer{
   display: flex;
   align-self: flex-end;
+  padding: inherit;
+}
+
+.addFilterDropdown{
+    width: 100%;
+    background: #25292c;
+    border: unset;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.selectedOption{
+  flex: 1;
+  background: #25292c;
+  text-align: start;
+  font-size: 15px;
+  border: unset;
+}
+
+.dropdownArrow{
+  background: #25292c;
+  border: unset;
+  color: #d8bfa4;
+  text-align: end;
+}
+
+.btn-success.dropdown-toggle{
+  background: #25292c !important;
+}
+
+.dropdownArrow:hover {
+  background: none ;
+}
+
+.selectedOption:hover{
+  background: none ;
+}
+
+.options{
+  left: unset !important;
+  right: 231px !important;
+  margin: unset !important;
+  width: 100%;
 }

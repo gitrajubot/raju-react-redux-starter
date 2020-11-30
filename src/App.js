@@ -6,7 +6,7 @@ import Router from './router'
 import { connect } from 'react-redux';
 import { GetHeaderDataAction } from './actions/TablePageAction';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-// import { Dropdown } from 'bootstrap';
+import { Dropdown, ButtonGroup } from 'react-bootstrap';
 import MaterialInput from './components/materialInput'
 
 
@@ -68,17 +68,17 @@ class App extends Component {
             <div className='modalTitle'>Edit filter</div>
             <ModalBody>
               <div className="modalTitle  fieldTitle">Column</div>
-              {/* <Dropdown as={ButtonGroup}>
-                <Button variant="success">Split Button</Button>
+              <Dropdown as={ButtonGroup} className='addFilterDropdown'>
+                <Button variant="success" className='selectedOption'>Select</Button>
 
-                <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+                <Dropdown.Toggle split variant="success" id="dropdown-split-basic" className='dropdownArrow' />
 
-                <Dropdown.Menu>
+                <Dropdown.Menu className='options'>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                   <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                 </Dropdown.Menu>
-              </Dropdown> */}
+              </Dropdown>
               <div className="modalTitle  fieldTitle">State</div>
               <MaterialInput inputClass="modalInp"></MaterialInput>
               <div className="modalTitle  fieldTitle">Value</div>
